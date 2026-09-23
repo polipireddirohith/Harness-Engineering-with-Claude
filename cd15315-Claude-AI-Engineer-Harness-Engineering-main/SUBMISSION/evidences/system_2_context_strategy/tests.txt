@@ -1,0 +1,4 @@
+Verification run: python -m pytest -q -rs
+Result: 28 passed, 2 skipped
+Skipped tests require run artifacts from `python -m retail_context.run --build`.
+The live Anthropic token-counting/build run was not performed because no API credential is stored in this package.

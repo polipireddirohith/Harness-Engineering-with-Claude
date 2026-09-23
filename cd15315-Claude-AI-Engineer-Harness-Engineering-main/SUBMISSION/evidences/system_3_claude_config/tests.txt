@@ -1,0 +1,2 @@
+Verification run: python -m pytest -q
+Result: 35 passed

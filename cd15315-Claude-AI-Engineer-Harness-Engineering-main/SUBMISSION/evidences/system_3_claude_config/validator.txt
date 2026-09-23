@@ -1,0 +1,3 @@
+Command: python -m ecommerce_team_config .
+Output: OK
+Exit code: 0

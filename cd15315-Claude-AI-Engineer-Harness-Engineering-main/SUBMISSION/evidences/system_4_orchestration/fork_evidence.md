@@ -1,0 +1,1 @@
+The solution contains the fork-and-scratchpad implementation in `shift_monitor/fork.py` and the corresponding tests. The offline verification above confirms the orchestration pipeline can run from recorded response data without a live model call.
