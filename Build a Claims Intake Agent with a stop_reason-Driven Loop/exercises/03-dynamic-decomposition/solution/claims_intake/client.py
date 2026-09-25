@@ -4,16 +4,19 @@ import os
 
 from anthropic import Anthropic
 
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
 
 def make_client() -> Anthropic:
     """Construct an Anthropic client from env. Fails fast if API key is missing."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
+    base_url = os.environ.get("ANTHROPIC_BASE_URL")
+
     if not api_key:
         raise RuntimeError(
             "ANTHROPIC_API_KEY is not set. Export it before running, e.g.:\n"
             "    export ANTHROPIC_API_KEY=sk-ant-..."
         )
-    return Anthropic(api_key=api_key)
+    return Anthropic(api_key=api_key, base_url=base_url)
 
 
 DEFAULT_MODEL = "claude-haiku-4-5-20251001"
